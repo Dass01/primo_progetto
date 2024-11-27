@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-99$d=j*&6=z64ig9)y^n-#^mic*dzx25*53*fr(9=kswe&$=j!'
+SECRET_KEY = 'django-insecure-xvfa4hdu)93z2l6fbgtl28)3qwp2++l9^@fyqyhk)ha4(@wni2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'prima_app',
+    'seconda_app',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,9 @@ ROOT_URLCONF = 'primo_progetto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'prima_app/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'prima_app/templates'), 
+                 os.path.join(BASE_DIR, 'templates'), 
+                 os.path.join(BASE_DIR, 'seconda_app/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
