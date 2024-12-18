@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Es_if</title>
-</head>
+{%extends "base.html"%}
+{%block title%}{{block.super}} es_if {%endblock title%}
+
+{%block content%}
 <body>
     <b>var1 = {{ var1 }}</b> <br/>
     <b>var2 = {{ var2 }}</b> <br/>
@@ -16,7 +13,7 @@
     <p><i>varl è maggiore di var2 </i></p>
     {% endif %}
     {% if var1 <= var2 %}
-    <p><i>varl è minore o uguale di var2 <</i></p>
+    <p><i>varl è minore o uguale di var2 </i></p>
     {% endif %}
     {% if var1 >= var2 %}
     <p><i>varl è maggiore o uguale di var2 </i></p>
@@ -36,5 +33,4 @@
     {% if not var1 > var2 %}
     <p><i>var1 non è maggiore di var2 </i></p>
     {% endif %}
-</body>
-</html>
+{%endblock content%}
