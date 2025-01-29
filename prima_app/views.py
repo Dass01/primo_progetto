@@ -23,3 +23,6 @@ def variabili(request):
 
 def index(request):
     return render(request,"index.html")
+
+def index_root(request):
+    return render(request,"index_root.html")

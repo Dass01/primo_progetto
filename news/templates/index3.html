@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+    </head>
+    <body>
+        <ol>
+            <li><a href="{% url 'prima_app:index_root'%}">Index_root</a></li>
+            <li><a class="dropdown-item" href="{% url 'news:homeview'%}">homeview</a></li>
+            <li><a class="dropdown-item" href="{% url 'news:articolo_detail' 1%}">articolo_detail</a></li>
+            <li><a class="dropdown-item" href="{% url 'news:lista_articoli'%}">lista_articoli</a></li>
+            <li><a class="dropdown-item" href="{% url 'news:queryBase'%}">queryBase</a></li>
+            <li><a class="dropdown-item" href="{% url 'news:giornalista_detail' 1%}">giornalista_detail</a></li>
+            
+
+                  
+                  
+                  
+        
+        </ol>
+    </body>
+</html>

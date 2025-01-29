@@ -26,6 +26,7 @@
                 Prima app
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'prima_app:index'%}">index_primaApp</a>
                 <a class="dropdown-item" href="{% url 'prima_app:homepage'%}">Home page benvenuto</a>
                 <a class="dropdown-item" href="{% url 'prima_app:welcome'%}">Welcome</a>
                 <a class="dropdown-item" href="{% url 'prima_app:lista'%}">Lista</a>
@@ -43,6 +44,20 @@
                   <a class="dropdown-item" href="{% url 'seconda_app:es_if'%}">es_if</a>
                   <a class="dropdown-item" href="{% url 'seconda_app:if_else_elif'%}">if_else_elif</a>
                   <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">es_for</a>
+                  <div class="dropdown-divider"></div>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  News
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'news:homeview'%}">homeview</a>
+                  <a class="dropdown-item" href="{% url 'news:articolo_detail' 1%}">articolo_detail</a>
+                  <a class="dropdown-item" href="{% url 'news:lista_articoli'%}">lista_articoli</a>
+                  <a class="dropdown-item" href="{% url 'news:queryBase'%}">queryBase</a>
+                  <a class="dropdown-item" href="{% url 'news:giornalista_detail' 1%}">giornalista_detail</a>
                   <div class="dropdown-divider"></div>
                 </div>
               </li>
