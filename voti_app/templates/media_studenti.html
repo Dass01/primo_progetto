@@ -1,0 +1,13 @@
+{%extends "base.html"%}
+{% block title %} 
+    Media voti 
+{% endblock title %}
+
+{%block content%}
+    <h4>Lista voti: </h4>
+    <ul>
+    {% for alunno,media in medie %}
+        <li>{{alunno}}: {{media}}</li>
+    {% endfor %}
+    <ul>
+{%endblock content%}

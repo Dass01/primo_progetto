@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{%block title%}listaVoti {%endblock title%}
+
+{%block content%}
+<h1>Elenco voti:</h1>
+<ul>
+    {% for alunno,materie in voti.items %}
+        <li>{{alunno}}</li>
+        <ul>
+        {% for materia in materie %}
+            <li>{{materia.0}}, {{materia.1}}</li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+</ul>
+
+{%endblock content%}
