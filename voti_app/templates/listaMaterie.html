@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block title%}ListaMaterie {%endblock title%}
+
+{%block content%}
+<h1>Elenco materie:</h1>
+<ul>
+    {% for materia in materie %}
+        <li>{{materia}}</li>
+    {% endfor %}
+</ul>
+
+{%endblock content%}

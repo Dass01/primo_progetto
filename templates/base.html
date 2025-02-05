@@ -62,6 +62,20 @@
                 </div>
               </li>
 
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Voti_app
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'voti_app:listaMaterie'%}">ListaMaterie</a>
+                  <a class="dropdown-item" href="{% url 'voti_app:listaVoti'%}">listaVoti</a>
+                  <a class="dropdown-item" href="{% url 'voti_app:media_studenti'%}">media_studenti</a>
+                  <a class="dropdown-item" href="{% url 'voti_app:max_min'%}">max_min</a>
+                  <div class="dropdown-divider"></div>
+                </div>
+              </li>
+
             
           </ul>
         </div>
