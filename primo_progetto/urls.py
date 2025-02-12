@@ -25,6 +25,7 @@ urlpatterns = [
     path('seconda_app/',include("seconda_app.urls",namespace="seconda_app")),
     path('news/',include("news.urls",namespace="news")),
     path('voti_app/',include("voti_app.urls",namespace="voti_app")),
+    path('gestione_eventi_scolastici/',include("gestione_eventi_scolastici.urls",namespace="gestione_eventi_scolastici")),
 
 
 ]
