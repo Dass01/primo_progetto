@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block title%}Corsi con meno di 20 posti disponibili{%endblock title%}
+
+{%block content%}
+<h1>Corsi con meno di 20 posti disponibili:</h1>
+<ul>
+    {% for corso in corsi_meno20 %}
+        <li>{{corso.titolo}}</li>
+    {% endfor %}
+</ul>
+
+{%endblock content%}

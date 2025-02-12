@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{%block content%}
+<h1>Benvenuto nel sistema di gestione dei Corsi di Formazione</h1>
+<ul>
+  <li><a href={% url 'corsi_formazione:view_a'%}>Lista_Corsi</a></li>
+  <li><a href={% url 'corsi_formazione:view_b' 1%}>Dettagli dei Corsi</a></li>
+  <li><a href={% url 'corsi_formazione:view_c'%}>Corsi che iniziano dopo il 01/05/2025</a></li>
+  <li><a href={% url 'corsi_formazione:view_d'%}>Corsi con meno di 20 posti disponibili</a></li>
+  <li><a href={% url 'corsi_formazione:view_e'%}>Corsi che terminano entro il 30/04/2025</a></li>
+  <li><a href={% url 'corsi_formazione:view_f'%}>Statistiche Avanzate sui Corsi</a></li>
+</ul>
+
+
+
+{%endblock content%}

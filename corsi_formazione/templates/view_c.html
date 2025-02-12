@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block title%}Elenco corsi con data inizio dopo al 01/05/2025 {%endblock title%}
+
+{%block content%}
+<h1>Elenco corsi con data inizio dopo al 01/05/2025:</h1>
+<ul>
+    {% for corso in corsi_dopo_data %}
+        <li>{{corso.titolo}}</li>
+    {% endfor %}
+</ul>
+
+{%endblock content%}

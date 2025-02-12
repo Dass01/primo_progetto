@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block title%}Corsi che terminano entro il 30/04/2025 {%endblock title%}
+
+{%block content%}
+<h1>Corsi che terminano entro il 30/04/2025:</h1>
+<ul>
+    {% for corso in corsi_terminati_entro %}
+        <li>{{corso.titolo}}</li>
+    {% endfor %}
+</ul>
+
+{%endblock content%}
