@@ -27,6 +27,7 @@ urlpatterns = [
     path('voti_app/',include("voti_app.urls",namespace="voti_app")),
     path('gestione_eventi_scolastici/',include("gestione_eventi_scolastici.urls",namespace="gestione_eventi_scolastici")),
     path('corsi_formazione/',include("corsi_formazione.urls",namespace="corsi_formazione")),
+    path('accounts/', include('django.contrib.auth.urls')),
 
 
 ]
